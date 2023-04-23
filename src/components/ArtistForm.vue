@@ -1,13 +1,26 @@
 <script setup>
 	import { ref, reactive } from 'vue';
+	import { useArtistsStore } from '@/stores/artists';
+
+	const artists = useArtistsStore();
 
 	const artist = reactive({
-		name: 'Fred Again',
-		song: 'Baby again..',
+		name: '',
+		song: '',
 	});
 
 	function save() {
-		alert('save');
+		const record = {
+			name: artist.name,
+			song: artist.song,
+		};
+		artists.add(record);
+		clear();
+	}
+
+	function clear() {
+		artist.name = '';
+		artist.song = '';
 	}
 </script>
 
@@ -23,6 +36,11 @@
 			<input id="s" type="text" v-model="artist.song" />
 		</div>
 
+		<ul>
+			<li v-for="artist in artists.list">
+				{{ artist.name }}
+			</li>
+		</ul>
 		<button type="submit">Submit</button>
 	</form>
 </template>
