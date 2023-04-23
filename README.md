@@ -28,6 +28,12 @@ npm run dev
 npm run build
 ```
 
+### Compile and Minify for Development
+
+```sh
+npm run build:dev
+```
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
