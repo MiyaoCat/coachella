@@ -4,7 +4,7 @@
 
 <template>
    <main>
-      <h1>Welcome</h1>
+      <h1>Coachella!</h1>
 
       <ArtistForm />
    </main>

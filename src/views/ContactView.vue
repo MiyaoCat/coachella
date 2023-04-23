@@ -1,3 +1,3 @@
 <template>
-   <h1>Contact</h1>
+   <h1>Contact the Artists! jk.</h1>
 </template>
