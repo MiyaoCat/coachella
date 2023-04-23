@@ -1,9 +1,11 @@
 <script setup>
-   import TheWelcome from '../components/TheWelcome.vue';
+   import ArtistForm from '../components/ArtistForm.vue';
 </script>
 
 <template>
    <main>
-      <TheWelcome />
+      <h1>Welcome</h1>
+
+      <ArtistForm />
    </main>
 </template>
