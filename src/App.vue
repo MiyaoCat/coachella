@@ -1,14 +1,17 @@
 <script setup>
-   import { RouterLink, RouterView } from 'vue-router';
+   import { RouterLink, RouterView, useRoute } from 'vue-router';
    import HelloWorld from './components/HelloWorld.vue';
+
+   const route = useRoute();
+
+   console.log(route);
 </script>
 
 <template>
-   <header>
+   <header :class="route.name">
       <div class="wrapper">
          <HelloWorld msg="Hi John!" />
-
-         <nav>
+         <nav class="site-menu">
             <RouterLink class="page" to="/">Home</RouterLink>
             <RouterLink class="page" to="/about">About</RouterLink>
             <RouterLink class="page" to="/contact">Contact</RouterLink>
@@ -31,5 +34,17 @@
 <style>
    .page {
       margin: 5px;
+   }
+
+   .site-menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .site-menu a {
+   }
+   .router-link-active {
+      border-bottom: 3px solid var(--highlight);
    }
 </style>

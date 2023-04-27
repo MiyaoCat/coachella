@@ -8,6 +8,7 @@ html {
 	--shadow: rgba(0, 0, 0, 0.8);
 
 	--corners: 10px; /* or whatevers */
+	--space: 20px;
 
 	--standard: 1140px;
 	--tight: 800px;
