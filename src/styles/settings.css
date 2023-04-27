@@ -1,12 +1,11 @@
-
 html {
 	--black: #111111;
-	--white: #FFF;
+	--white: #fff;
 
-	--color: #5E321F;
+	--color: #5e321f;
 	--highlight: #aadee9;
 
-	--shadow: rgba(0,0,0,.8);
+	--shadow: rgba(0, 0, 0, 0.8);
 
 	--corners: 10px; /* or whatevers */
 
@@ -22,9 +21,9 @@ html {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper: hsl(28, 17%, 30%); /* dark brown */
+		--paper: black; /* dark brown */
 		--ink: white;
-		--highlight: yellow;
+		--highlight: red;
 	}
 
 	.logo {

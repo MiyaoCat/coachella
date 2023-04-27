@@ -37,6 +37,7 @@
 		</div>
 
 		<ul>
+			<h3 v-if="artist.name">{{ artist.name }}</h3>
 			<li v-for="artist in artists.list">
 				{{ artist.name }}
 			</li>
