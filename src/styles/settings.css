@@ -1,7 +1,4 @@
 html {
-	--black: #111111;
-	--white: #fff;
-
 	--color: #5e321f;
 	--highlight: #aadee9;
 
@@ -14,16 +11,16 @@ html {
 	--tight: 800px;
 	--wide: 98vw;
 
-	--paper: hsl(37, 32%, 92%); /* light brown */
+	--paper: hsla(219, 28%, 88%, 1); /* light brown */
 
-	--ink: black;
+	--ink: hsla(212, 15%, 22%, 1);
 	--highlight: hsl(360, 100%, 39%); /* red */
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper: black; /* dark brown */
-		--ink: white;
+		--paper: hsla(212, 15%, 22%, 1); /* dark brown */
+		--ink: hsla(219, 28%, 88%, 1);
 		--highlight: red;
 	}
 
